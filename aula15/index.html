@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia!</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
+        <div id="form">
+            <p>Ano de Nascimento <input type="number" id="anonas" min="1900"></p>
+            <p>Sexo: <input type="radio" name="radsex" id="sexom"><label for="sexom">Masculino</label><input type="radio" name="radsex" id="sexof">
+            <label for="sexof">Feminino</label></p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
         
     </section>
     <footer>
         <p>&copy; luanvictorfb</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
