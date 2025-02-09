@@ -1,17 +1,16 @@
 let res = document.querySelector('div#res')
+let txtn = document.querySelector('input#txtn')
+let lista = document.querySelector('select#flista')
 let array = []
 
 function adicionar() {
-    let txtn = document.querySelector('input#txtn')
-    let n = Number(txtn.value)
 
-    if (isNaN(n) || n < 0 || n > 100) {
-        window.alert('Número não válido')
+    if (isNumero(Number.value) && !inLista(Number.value)) {
+        
     } else {
-        array.push(n)
-        res.innerHTML = `Valor adicionado: ${n}`
+        window.alert('Número não válido ou já encontrado na lista')
     }
 
-    txtn.value = "<br>"
+    txtn.value = ""
     txtn.focus()
 }
